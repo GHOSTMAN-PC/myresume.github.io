@@ -4,7 +4,6 @@
 /*COLORS*/
 :root{
 	--primary :#1a253f;
-	/*--primary :#141d32;*/
 	--dark:#151A33;
 	--secondary:#2b55cc;
 	--info:#4d79f6;
@@ -39,12 +38,12 @@ body{
 	padding-bottom: 4rem;
 }
 
-#particles-js{
+/*#particles-js{
 	position: fixed;
 	width: 100%;
 	height: 100%;
 	z-index: 10;
-}
+}*/
 
 h1,h2,h3,h4,h5,h6{
 	margin: 0;
@@ -92,7 +91,7 @@ nav .inner button:hover{
 
 /*SECTION PROFILE*/
 section.profile{
-	background: var(--black);
+	background: var(--black); /*For changing the BC of water effects*/
 	display: flex;
 	align-items: center;
 	padding: 3rem;
@@ -197,7 +196,7 @@ section.profile .right ul.socials li:nth-child(1) a{
 	background: var(--secondary);
 }
 section.profile .right ul.socials li:nth-child(2) a{
-	background: var(--twitter);
+	background: var(--secondary);
 }
 section.profile .right ul.socials li:nth-child(3) a{
 	background: var(--info);
@@ -293,6 +292,38 @@ section.about .content .right p span:nth-child(1):after{
 	top: 0;
 }
 
+section.about .content .right{
+	padding-top: 100px;
+}
+
+
+/*SECTION FOR TECNICAL SKILLS DETAILS CSS STYLE*/
+section.skill-detail .content .right p{
+	line-height: 1.6;
+	font-size: 14px;
+	color: var(--ternary);
+	letter-spacing: 0.1px;
+	margin-bottom: 1rem;
+}
+
+section.skill-detail .content .right p span:nth-child(1){
+	width: 150px;
+	float: left;
+	font-weight: 500;
+	padding-right: 10px;
+	display: block;
+	position: relative;	
+}
+section.skill-detail .content .right p span:nth-child(2){
+	padding-left: 170px;
+	display: block;
+}
+section.skill-detail .content .right p span:nth-child(1):after{
+	content: ':';
+	position: absolute;
+	right: 0;
+	top: 0;
+}
 
 /*SKILLS AND EXPERIENCE SECTION STYLE*/
 section.skills .content{
@@ -426,6 +457,16 @@ section.counter_section > div h5{
 	color: var(--fade);	
 }
 
+/*SECTION FOR CERTIFICATION DONE CSS STYLE*/
+
+section.certification-detail .content .right p{
+	line-height: 1.6;
+	font-size: 14px;
+	color: var(--ternary);
+	letter-spacing: 0.1px;
+	margin-bottom: 1rem;
+}
+
 
 /*WORK SECTION STYLE CSS*/
 
@@ -527,6 +568,7 @@ section.partners .brands_wrapper{
 	align-items: center;
 	justify-content: space-around;
 }
+
 
 
 /*SECTION CONTACT CSS STYLE START*/
